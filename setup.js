@@ -252,6 +252,7 @@ class GameController {
 
 function init() {
   scene = new THREE.Scene();
+  console.log("gg");
 
   renderer = new THREE.WebGLRenderer();
   renderer.setSize(window.innerWidth, window.innerHeight);
