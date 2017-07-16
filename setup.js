@@ -115,8 +115,8 @@ class Player {
   }
   
   move() {
-    var x = this.speed * Math.cos(this.camera.rotation.x);
-    var y = this.speed * Math.sin(this.camera.rotation.x);
+    var x = this.speed * Math.cos(this.camera.rotation.y);
+    var y = this.speed * Math.sin(this.camera.rotation.y);
     
     if (InputFlags["87"]) {
       this.vel.x += y;
