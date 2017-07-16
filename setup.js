@@ -163,6 +163,8 @@ class Player {
     this.pos.add(this.vel);
     this.camera.position.set(this.pos.x, this.pos.y, this.pos.z);
     this.camera.rotation.x += 0.05;
+    
+    console.log("updated player's physics");
   }
 }
 
