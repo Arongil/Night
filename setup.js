@@ -141,8 +141,8 @@ class Player {
       this.vel.y += this.speed;
     }
     
-    this.camera.rotation.y -= this.turnSpeed * InputFlags["mousepos"]["dx"];
-    this.camera.rotation.x += this.turnSpeed * InputFlags["mousepos"]["dy"];
+//     this.camera.rotation.y -= this.turnSpeed * InputFlags["mousepos"]["dx"];
+//     this.camera.rotation.x += this.turnSpeed * InputFlags["mousepos"]["dy"];
     InputFlags["mousepos"]["dx"] = 0;
     InputFlags["mousepos"]["dy"] = 0;
     
@@ -162,7 +162,7 @@ class Player {
     this.vel.multiplyScalar(this.onGround ? GC.GROUNDFRICTION : GC.AIRFRICTION);
     this.pos.add(this.vel);
     this.camera.position.set(this.pos.x, this.pos.y, this.pos.z);
-    this.camera.rotation.z = 0;
+    this.camera.rotation.x += 0.01;
   }
 }
 
