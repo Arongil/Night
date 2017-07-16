@@ -125,6 +125,7 @@ class Player {
     if (InputFlags["83"]) {
       this.vel.x -= y;
       this.vel.z += x;
+      console.log("83");
     }
     if (InputFlags["65"]) {
       this.vel.x -= x;
