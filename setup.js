@@ -158,6 +158,7 @@ class Player {
   }
   
   updatePhysics() {
+    console.log(this.vel);
     this.move();
     ////////////////////////////////////////////////////////////
     this.camera.lookAt(new THREE.Vector3(0, 20, 0));
