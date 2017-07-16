@@ -110,7 +110,7 @@ class Player {
     
     this.onGround = false;
     
-    this.speed = 1;
+    this.speed = 0.01;
     this.turnSpeed = 0.02;
   }
   
