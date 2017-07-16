@@ -161,7 +161,7 @@ class Player {
     
     this.vel.multiplyScalar(this.onGround ? GC.GROUNDFRICTION : GC.AIRFRICTION);
     this.pos.add(this.vel);
-    this.camera.position = this.pos;
+    this.camera.position = this.pos.clone();
   }
 }
 
