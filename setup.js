@@ -162,7 +162,7 @@ class Player {
     this.vel.multiplyScalar(this.onGround ? GC.GROUNDFRICTION : GC.AIRFRICTION);
     this.pos.add(this.vel);
     this.camera.position.set(this.pos.x, this.pos.y, this.pos.z);
-    this.camera.rotation.x += 0.01;
+    this.camera.rotation.x += 0.05;
   }
 }
 
