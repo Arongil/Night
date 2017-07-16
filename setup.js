@@ -209,7 +209,7 @@ class GameController {
     
     for (var i = 0; i < blocks.length; i++) {
       if (i % Math.floor(blocks.length/100) == 0) {
-        console.log(Math.floor(i / blocks.length * 100) + "% LOADED");
+        //console.log(Math.floor(i / blocks.length * 100) + "% LOADED");
       }
       
       block = blocks[i];
