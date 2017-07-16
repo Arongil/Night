@@ -159,12 +159,10 @@ class Player {
   
   updatePhysics() {
     this.move();
-    ////////////////////////////////////////////////////////////
-    this.camera.lookAt(new THREE.Vector3(0, 2000, 0));
-    ////////////////////////////////////////////////////////////
     
     this.vel.multiplyScalar(this.onGround ? GC.GROUNDFRICTION : GC.AIRFRICTION);
     this.pos.add(this.vel);
+    this.camera.position = this.pos;
   }
 }
 
