@@ -209,7 +209,7 @@ class GameController {
     
     for (var i = 0; i < blocks.length; i++) {
       if (i % Math.floor(blocks.length/100) == 0) {
-        //console.log(Math.floor(i / blocks.length * 100) + "% LOADED");
+        console.log(Math.floor(i / blocks.length * 100) + "% LOADED");
       }
       
       block = blocks[i];
@@ -252,7 +252,6 @@ class GameController {
 
 function init() {
   scene = new THREE.Scene();
-  console.log("gg");
 
   renderer = new THREE.WebGLRenderer();
   renderer.setSize(window.innerWidth, window.innerHeight);
@@ -290,12 +289,11 @@ function init() {
   
   GC = new GameController();
   
-  console.log("hellof?");
   loop();
 }
 
 function loop() {
   window.requestAnimationFrame(loop);
-  console.log("hello?");
+  
   GC.update();
 }
