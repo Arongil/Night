@@ -110,12 +110,11 @@ class Player {
     
     this.onGround = false;
     
-    this.speed = 0.1;
+    this.speed = 1;
     this.turnSpeed = 0.02;
   }
   
   move() {
-    console.log("42oooooooo");
     var x = this.speed * Math.cos(this.camera.rotation.x);
     var y = this.speed * Math.sin(this.camera.rotation.x);
     
@@ -188,6 +187,7 @@ class GameController {
     this.player.updatePhysics();
     
     renderer.render(scene, GC.getCamera());
+    console.log("hellloooo?");
   }
   
   updateScene() {
