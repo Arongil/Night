@@ -187,7 +187,6 @@ class GameController {
     this.player.updatePhysics();
     
     renderer.render(scene, GC.getCamera());
-    console.log("hellloooo?");
   }
   
   updateScene() {
@@ -290,11 +289,12 @@ function init() {
   
   GC = new GameController();
   
+  console.log("hellof?");
   loop();
 }
 
 function loop() {
   window.requestAnimationFrame(loop);
-  
+  console.log("hello?");
   GC.update();
 }
